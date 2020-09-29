@@ -8,8 +8,7 @@ body, html{
 
 //RESET
 .container{
-    height: auto;
-    min-height: 100vh;
+    height: 100vh;
     max-width: 100vw;
     background-color: white;
     position: relative;
@@ -22,6 +21,7 @@ body, html{
 button{
     border: none;
     background-color: transparent;
+    cursor: pointer;
     &:hover{
         box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
     }
@@ -85,3 +85,19 @@ header{
         outline: none;
     }
 }
+
+.initial-animation{
+    opacity: 1;
+    animation-name: init;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes init {
+    0%   { opacity: 0;}
+    100% { opacity: 1;}
+  }
+
+  th, td{
+      text-align: center;
+  }

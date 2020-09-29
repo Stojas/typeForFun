@@ -1,0 +1,6 @@
+<div class="checkbox__background" (click)="changeState()">
+  <div class="checkbox__slider" [ngClass]="{'checkbox__move': !value && init, 'checkbox__moveback': value && init }">
+    <span *ngIf="value" class="initial-animation">{{placeholder1}}</span>
+    <span *ngIf="!value" class="initial-animation">{{placeholder2}}</span>
+  </div>
+</div>

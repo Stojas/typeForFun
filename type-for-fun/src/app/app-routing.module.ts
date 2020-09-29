@@ -5,10 +5,10 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   { path: '', redirectTo: '/user', pathMatch: 'full' },
   { path: 'user', component: InitialPageComponent  },
-  // {
-  //   path: 'bets',
-  //   loadChildren: () => import('./bets/bets.module').then(m => m.BetsModule)
-  // }
+  {
+    path: 'bets',
+    loadChildren: () => import('./bets/bets.module').then(m => m.BetsModule)
+  }
 ];
 
 @NgModule({

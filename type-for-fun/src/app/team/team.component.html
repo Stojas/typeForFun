@@ -1,0 +1,39 @@
+<p class="collapse__row">
+  <button class="collapse__button" [ngClass]="{'collapse__button--mark': teamSelect === 'team'}" (click)="teamSelect = 'team'">Skład</button>
+  <button class="collapse__button" [ngClass]="{'collapse__button--mark': teamSelect === 'pitch'}" (click)="teamSelect = 'pitch'">Boisko</button>
+</p>
+<ng-container *ngTemplateOutlet="teamSelect == 'team' ? team : pitch">
+ 
+</ng-container>
+
+<ng-template #team >
+  <div style="height: 100%; width: 100%;" class="initial-animation">
+    <div class="my-table">
+      <table class="table table-dark table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Nazwisko</th>
+            <th scope="col">Imię</th>
+            <th scope="col">Pozycja</th>
+            <th scope="col">Obecny ranking</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let player of (host ? team1 : team2); let i = index" >
+              <td>{{player.name}}</td>
+              <td>{{player.lastName}}</td>
+              <td [ngClass]="'position-' + player.position">{{player.position}}</td>
+              <td>{{player.rank}}</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+    <app-big-checkbox [placeholder1]="'Gospodarz'" [placeholder2]="'Gość'" (change)="teamChange($event)"></app-big-checkbox>
+  </div>
+  
+</ng-template>
+<ng-template #pitch class="initial-animation">
+  <div  class="initial-animation">
+
+  </div>
+</ng-template>

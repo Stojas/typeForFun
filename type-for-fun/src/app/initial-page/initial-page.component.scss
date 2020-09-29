@@ -67,12 +67,7 @@ $dark_green: #379683;
     }
 }
 
-.initial-animation{
-    opacity: 1;
-    animation-name: init;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
+
 
 .start-button{
     position: fixed;
@@ -105,10 +100,7 @@ $dark_green: #379683;
 }
 
 
-@keyframes init {
-    0%   { opacity: 0;}
-    100% { opacity: 1;}
-  }
+
 
   @media only screen and  (max-width: 500px) {
     .container__block{

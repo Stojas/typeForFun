@@ -1,0 +1,58 @@
+.collapse__button{
+    height: auto;
+    width: calc(50% - 2px);
+    margin: 1px;
+    box-shadow: none;
+    border-radius: 3px;
+    background-color: lightgrey;
+    color: white;
+    box-sizing: border-box;
+    &:hover{
+        background-color: #5cdb95;
+        opacity: 0.5;
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+        border: none;
+        color: white
+    }
+}
+
+.collapse__button--mark{
+    background-color: #5cdb95;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    border: none;
+    color: white
+}
+
+
+.collapse__row{
+    width: 100%;
+}
+
+.position-LO,
+.position-CO,
+.position-PO{
+    background-color: #6699ff;
+}
+
+.position-N{
+    background-color: #ff5050;
+}
+
+.position-GK{
+    background-color: #ffcc00;
+}
+
+.position-SPO,
+.position-DP,
+.position-PP,
+.position-LP{
+    background-color: #00cc00;
+}
+
+th, td{
+    width: 25%;
+}
+
+.pitch{
+    background-image: url('../../assets/imgs/ao.jpg');
+}
