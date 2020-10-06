@@ -1,4 +1,5 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+
 @Component({
   selector: 'app-team',
   templateUrl: './team.component.html',
@@ -150,8 +151,15 @@ export class TeamComponent implements OnInit {
   ngOnInit() {
   }
 
+  changeTeamOrPitch(value: string){
+    this.teamSelect = value;
+  }
+
+
+
   teamChange(event){
     this.host = event;
+
   }
 
 }

@@ -7,6 +7,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { BigCheckboxComponent } from './big-checkbox/big-checkbox.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { PitchComponent } from './pitch/pitch.component';
+import { TeamsTableComponent } from './teams-table/teams-table.component';
 
 @NgModule({
   declarations: [

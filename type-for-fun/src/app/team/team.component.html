@@ -1,6 +1,6 @@
 <p class="collapse__row">
-  <button class="collapse__button" [ngClass]="{'collapse__button--mark': teamSelect === 'team'}" (click)="teamSelect = 'team'">Skład</button>
-  <button class="collapse__button" [ngClass]="{'collapse__button--mark': teamSelect === 'pitch'}" (click)="teamSelect = 'pitch'">Boisko</button>
+  <button class="collapse__button" [ngClass]="{'collapse__button--mark': teamSelect === 'team'}" (click)="changeTeamOrPitch('team')">Skład</button>
+  <button class="collapse__button" [ngClass]="{'collapse__button--mark': teamSelect === 'pitch'}" (click)="changeTeamOrPitch('pitch')">Boisko</button>
 </p>
 <ng-container *ngTemplateOutlet="teamSelect == 'team' ? team : pitch">
  
@@ -33,7 +33,7 @@
   
 </ng-template>
 <ng-template #pitch class="initial-animation">
-  <div  class="initial-animation">
-
+  <div class="initial-animation" style="height: 100%;" >
+    <app-pitch></app-pitch>
   </div>
 </ng-template>

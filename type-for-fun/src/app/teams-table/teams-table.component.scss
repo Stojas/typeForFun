@@ -1,0 +1,57 @@
+.container__bpl{
+    background: linear-gradient(0.25turn, #782ff7, #4a9bff, #00d5ff);
+}
+
+.container__logo{
+    height: 100%;
+    width: 100%;
+    background-image: url("../../assets/imgs/bpllogo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container__teams{
+    width: 500px;
+}
+
+.team__info{
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    background-color: #e04736;
+    font-size: 50px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
+    margin: 20px 0;
+}
+
+.team__logo{
+    font-size: 26px;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    div{
+        height: 20px;
+        width: 20px;
+        margin:3px;
+        border: lightgray 1px solid;
+        border-radius: 3px;
+        background-color: #ed370e;
+    }
+}
+
+.team__section{
+    font-size: 18px;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    height: 100%;
+    div{
+        margin: 5px 0;
+    }
+}

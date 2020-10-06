@@ -68,17 +68,7 @@ export class BetsComponent implements OnInit {
   ngOnInit() {
   }
 
-  ngAfterViewInit(){
-    // const s = Snap('#circle');
-    // const c = s.circle(200, 200, 100);
-    // c.attr({
-    //   fill: "#32a846"
-    // })
-    // const d = s.polyline("150 150,150 0,-0 150");
-    // d.attr({
-      
-    // })
-
+  openTeams(fixture){
+    console.log("Fixture", fixture)
   }
-
 }

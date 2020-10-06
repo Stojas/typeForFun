@@ -16,6 +16,8 @@ body, html{
     flex-direction: column;
     padding: 60px 20px;
     box-sizing: border-box;
+    background: linear-gradient(0.25turn, #782ff7, #4a9bff, #00d5ff);
+
 }
 
 button{
@@ -101,3 +103,12 @@ header{
   th, td{
       text-align: center;
   }
+
+  .container__title{
+    width: 100%;
+    font-size: 40px;
+    color: #5cdb95;
+    padding: 10px;
+    border-bottom: 2px solid #5cdb95;
+    font-family: 'Oswald', sans-serif;
+}
